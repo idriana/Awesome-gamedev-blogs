@@ -45,6 +45,14 @@ Redblobgames.com - набор статей и туториалов по проц
 
 # Анализ metawarc
 
+* Файл метаданных сохранен как catlikecoding.com.meta.jsonl.
+* База данных metawarc сохранена как metawarc.db
+* Извлеченные метаданные не включены в репозиторий, для их извлечения необходимо использовать metawarc на веб-архиве.
+
+## Общая сводка
+
+``` metawarc analyze redblobgames.com.warc.gz ```
+
 | mimes                             | files |    size    |   share     |
 |-----------------------------------|-------|------------|-------------|
 | image/png                         | 1035  | 260388300  | 61.3276     |
@@ -74,3 +82,112 @@ Redblobgames.com - набор статей и туториалов по проц
 | image/x-ms-bmp                    | 6     | 7080       | 0.00166751  |
 | application/manifest+json         | 1     | 726        | 0.00017099  |
 | **#total**                        | **3436** | **424586100** | **100** |
+
+## Mime-типы
+
+``` metawarc stats -m mimes ```
+
+| mime                            | size      | count |
+|-|-|-|
+| application/json; charset=UTF-8 | 753145    |     6 |
+| application/manifest+json       | 726       |     1 |
+| application/octet-stream        | 6731748   |    27 |
+| application/pdf                 | 2511756   |     1 |
+| application/vnd.ms-fontobject   | 308715    |    11 |
+| application/wasm                | 5473894   |     7 |
+| application/xml                 | 258181    |     1 |
+| application/zip                 | 4345181   |     6 |
+| font/woff                       | 183795    |    11 |
+| font/woff2                      | 153165    |    11 |
+| image/avif                      | 103921    |     2 |
+| image/gif                       | 11101130  |    11 |
+| image/jpeg                      | 7325631   |   110 |
+| image/png                       | 260388300 |  1035 |
+| image/svg+xml; charset=UTF-8    | 985802    |    13 |
+| image/webp                      | 287598    |     3 |
+| image/x-icon; charset=UTF-8     | 15486     |     1 |
+| image/x-ms-bmp                  | 7080      |     6 |
+| text/css; charset=UTF-8         | 74472     |    13 |
+| text/html                       | 116069    |   321 |
+| text/html; charset=UTF-8        | 28857832  |  1175 |
+| text/javascript; charset=UTF-8  | 30647622  |   581 |
+| text/plain; charset=UTF-8       | 10684387  |    51 |
+| text/xml; charset=UTF-8         | 186100    |     2 |
+| video/mp4                       | 14048077  |    15 |
+| video/quicktime                 | 17025583  |     2 |
+| video/webm                      | 22010704  |    13 |
+
+## Расширения файлов
+
+``` metawarc stats -m exts ```
+
+| extension         | size      | count |
+|-|-|-|
+|                   | 19878746  |  1023 |
+| 3                 | 16796     |     1 |
+| 3m                | 16796     |     1 |
+| 3m-i386-linux-gnu | 16796     |     1 |
+| a                 | 33592     |     2 |
+| abc               | 50388     |     3 |
+| align             | 3803899   |     1 |
+| asdl              | 16796     |     1 |
+| avif              | 103921    |     2 |
+| bin               | 4466      |     1 |
+| bmp               | 7080      |     6 |
+| box               | 201552    |    12 |
+| bsd               | 16796     |     1 |
+| bxml              | 155341    |     2 |
+| c                 | 50388     |     3 |
+| cpp               | 40856     |     3 |
+| cs                | 39716     |     2 |
+| css               | 124860    |    16 |
+| csv               | 45939     |     3 |
+| db3               | 520565    |     1 |
+| eot               | 308715    |    11 |
+| exe               | 16796     |     1 |
+| gif               | 11101130  |    11 |
+| graphdata         | 204341    |     1 |
+| h                 | 67184     |     4 |
+| html              | 4109436   |   176 |
+| hx                | 71859     |     5 |
+| ico               | 15486     |     1 |
+| java              | 40112     |     2 |
+| jpg               | 7459999   |   118 |
+| js                | 32410287  |   687 |
+| json              | 770250    |     8 |
+| jsx               | 10449     |     2 |
+| key               | 16796     |     1 |
+| lua               | 28469     |     2 |
+| m                 | 16796     |     1 |
+| map               | 1832545   |     6 |
+| mod               | 33592     |     2 |
+| mov               | 17025583  |     2 |
+| mp4               | 14048077  |    15 |
+| o                 | 33592     |     2 |
+| org               | 602007    |    17 |
+| pdb               | 16796     |     1 |
+| pdf               | 2511756   |     1 |
+| png               | 260741016 |  1056 |
+| program           | 16796     |     1 |
+| py                | 271490    |    24 |
+| pyc               | 16796     |     1 |
+| rs                | 34207     |     2 |
+| so                | 33592     |     2 |
+| svg               | 1187354   |    25 |
+| text              | 16796     |     1 |
+| ts                | 1155164   |    67 |
+| ttf               | 323338    |    12 |
+| txt               | 9946654   |    18 |
+| types             | 134368    |     8 |
+| wasm              | 5524282   |    10 |
+| webm              | 22010704  |    13 |
+| webmanifest       | 726       |     1 |
+| webp              | 287598    |     3 |
+| woff              | 183795    |    11 |
+| woff2             | 153165    |    11 |
+| xml               | 305736    |     2 |
+| zip               | 4345181   |     6 |
+
+
+
+
