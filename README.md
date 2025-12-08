@@ -40,6 +40,15 @@
 * [codinglabs.net.warc.gz](https://drive.google.com/drive/folders/1yNwSJJ98EjahQ_KtyB6cPIOnHLDCe2L5?usp=drive_link) 
 * [redblobgames.com.warc.gz](https://drive.google.com/drive/folders/1Ji0dyAfjTEyKkwKKUIQ7O1eUTFpuX1Ig?usp=drive_link)
 
+# Контакты
+
+[Иван Романов](https://github.com/idriana), МИЭМ НИУ ВШЭ 2025
+
+# Условия использования
+
+Данная работа может свободно распространяться по лицензиии [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+
+
 
 
 
