@@ -2,7 +2,7 @@
 
 Репозиторий содержит коллекцию веб-архивов блогов, посвященных процедурной генерации игровых объектов и разработке игр в целом. Веб-архивы были созданы при помощи [wpull](https://github.com/ArchiveTeam/wpull), метаданные были собраны с использованием [metawarc](https://github.com/datacoon/metawarc). Коллекция содержит результат анализа [ArchiveReady](https://archiveready.com) для каждого веб-архива.
 
-В данном репозитории отсутствуют файлы веб-архивов .warc. Их можно найти на Google Drive, ссылка приведена в [соответсвующем разделе](#Веб-архивы формата .warc). Воспроизвести веб-архивы можно с помощью сервиса [Replay Webpage](https://replayweb.page).
+В данном репозитории отсутствуют файлы веб-архивов .warc. Их можно найти на Google Drive, ссылка приведена в [соответсвующем разделе](#веб-архивы-формата-warc). Воспроизвести веб-архивы можно с помощью сервиса [Replay Webpage](https://replayweb.page).
 
 # Краткое описание
 
@@ -38,5 +38,6 @@
 * [catlikecoding.com.warc.gz](https://drive.google.com/drive/folders/1_H-bb7338sZuzpQCf8aVkK1y6h0Z5T9c?usp=drive_link)
 * [codinglabs.net.warc.gz](https://drive.google.com/drive/folders/1yNwSJJ98EjahQ_KtyB6cPIOnHLDCe2L5?usp=drive_link)
 ​​​​​​​* [redblobgames.com.warc.gz](https://drive.google.com/drive/folders/1Ji0dyAfjTEyKkwKKUIQ7O1eUTFpuX1Ig?usp=drive_link)
+
 
 
