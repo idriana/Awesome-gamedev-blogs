@@ -25,9 +25,10 @@
 
 # Структура проекта
 
+* README.md - описание коллекции.
 * Отдельные папки, названные в соответствии с доменными именами сайтов, вошедших в коллекцию. В каждой папке представлены следующие файлы:
   * README.md - описание сайта, анализ веб-архива.
-  * <доменное имя сайта>.cdx - файл индексации формата (CDX Internet Archive Index)[https://www.loc.gov/preservation/digital/formats/fdd/fdd000590.shtml].
+  * <доменное имя сайта>.cdx - файл индексации формата [CDX Internet Archive Index](https://www.loc.gov/preservation/digital/formats/fdd/fdd000590.shtml).
   * <доменное имя сайта>.log - файл журнала, созданный в процессе работы wpull.
   * <доменное имя сайта>.meta.jsonl - файл метаданных веб-архива, собранных с помощью metawarc.
   * <доменное имя сайта>.db - файл базы данных wpull.
@@ -36,8 +37,9 @@
 # Веб-архивы формата .warc
 
 * [catlikecoding.com.warc.gz](https://drive.google.com/drive/folders/1_H-bb7338sZuzpQCf8aVkK1y6h0Z5T9c?usp=drive_link)
-* [codinglabs.net.warc.gz](https://drive.google.com/drive/folders/1yNwSJJ98EjahQ_KtyB6cPIOnHLDCe2L5?usp=drive_link)
-​​​​​​​* [redblobgames.com.warc.gz](https://drive.google.com/drive/folders/1Ji0dyAfjTEyKkwKKUIQ7O1eUTFpuX1Ig?usp=drive_link)
+* [codinglabs.net.warc.gz](https://drive.google.com/drive/folders/1yNwSJJ98EjahQ_KtyB6cPIOnHLDCe2L5?usp=drive_link) 
+* [redblobgames.com.warc.gz](https://drive.google.com/drive/folders/1Ji0dyAfjTEyKkwKKUIQ7O1eUTFpuX1Ig?usp=drive_link)
+
 
 
 
