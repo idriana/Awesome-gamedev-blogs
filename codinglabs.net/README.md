@@ -49,6 +49,14 @@
 
 # Анализ metawarc
 
+* Файл метаданных сохранен как catlikecoding.com.meta.jsonl.
+* База данных metawarc сохранена как metawarc.db
+* Извлеченные метаданные не включены в репозиторий, для их извлечения необходимо использовать metawarc на веб-архиве.
+
+## Общая сводка
+
+``` metawarc analyze codinglabs.net.warc.gz ```
+
 | mimes                             | files |    size   |   share    |
 |-----------------------------------|-------|-----------|------------|
 | application/octet-stream          |    14 | 11708069  | 51.8635    |
@@ -63,3 +71,45 @@
 | image/x-icon                      |     1 | 2318      | 0.0102681  |
 | text/xml                          |     1 | 2292      | 0.0101529  |
 | **#total**                        | **222** | **22574780** | **100** |
+
+## Mime-типы
+
+``` metawarc stats -m mimes ```
+
+| mime                          | size     | count |
+|-------------------------------|----------|-------|
+| application/javascript        | 145932   |     8 |
+| application/octet-stream      | 11708069 |    14 |
+| application/vnd.ms-fontobject | 65023    |     3 |
+| application/x-shockwave-flash | 269957   |     4 |
+| image/gif                     | 192622   |     3 |
+| image/jpeg                    | 6019509  |    73 |
+| image/png                     | 2266237  |    44 |
+| image/x-icon                  | 2318     |     1 |
+| text/css                      | 12513    |     3 |
+| text/html                     | 14270    |     8 |
+| text/html; charset=UTF-8      | 11045    |    23 |
+| text/html; charset=utf-8      | 1864993  |    37 |
+| text/xml                      | 2292     |     1 |
+
+## Расширения файлов
+
+``` metawarc stats -m exts ```
+
+| extension | size     | count |
+|-|-|-|
+|           | 59999    |     8 |
+| aspx      | 13436427 |    54 |
+| css       | 12513    |     3 |
+| eot       | 65023    |     3 |
+| gif       | 197876   |     4 |
+| html      | 16717    |    13 |
+| ico       | 2318     |     1 |
+| jpg       | 6019509  |    73 |
+| js        | 145932   |     8 |
+| png       | 2281999  |    47 |
+| swf       | 269957   |     4 |
+| ttf       | 64218    |     3 |
+| xml       | 2292     |     1 |
+
+
