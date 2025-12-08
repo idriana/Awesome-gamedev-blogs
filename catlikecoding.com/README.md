@@ -45,6 +45,14 @@ Catlikecoding.com - сайт с набором туториалов для Unity
 
 # Анализ metawarc
 
+* Файл метаданных сохранен как catlikecoding.com.meta.jsonl.
+* База данных metawarc сохранена как metawarc.db
+* Извлеченные метаданные не включены в репозиторий, для их извлечения необходимо использовать metawarc на веб-архиве.
+
+## Общая сводка
+
+``` metawarc analyze catlikecoding.com.warc.gz ```
+
 | mimes                     | files |     size     |    share      |
 |---------------------------|-------|--------------|---------------|
 | application/pdf           | 178   | 718701387    | 33.2009       |
@@ -64,4 +72,52 @@ Catlikecoding.com - сайт с набором туториалов для Unity
 | text/plain                | 1     | 333          | 0.0000153832  |
 | **#total**                | **6822** | **2164701794** | **100** |
 
+## Mime-типы
+
+``` metawarc stats -m mimes ```
+
+| mime                          | size      | count |
+|-------------------------------|-----------|-------|
+| None                          | 572600172 |   326 |
+| application/atom+xml          | 49031     |     2 |
+| application/javascript        | 22027791  |    10 |
+| application/pdf               | 718701387 |   178 |
+| application/xml               | 505       |     1 |
+| font/woff2                    | 66009     |     3 |
+| image/jpeg                    | 51798910  |   608 |
+| image/png                     | 330772815 |  4424 |
+| image/svg+xml                 | 7450      |     6 |
+| image/webp                    | 3603606   |   241 |
+| image/x-icon                  | 47674     |     3 |
+| text/css                      | 49487     |     7 |
+| text/html; charset=iso-8859-1 | 15458     |    28 |
+| text/html; charset=utf-8      | 14011973  |   529 |
+| text/plain; charset=utf-8     | 333       |     1 |
+| video/mp4                     | 450949193 |   455 |
+
+## Расширения файлов
+
+``` metawarc stats -m exts ```
+
+| extension    | size      | count |
+|--------------|-----------|-------|
+|              | 11462703  |   326 |
+| assets       | 415       |     1 |
+| atom         | 49031     |     2 |
+| css          | 49487     |     7 |
+| html         | 2554743   |   209 |
+| ico          | 48191     |     4 |
+| jpg          | 51804773  |   621 |
+| js           | 22028222  |    11 |
+| map          | 60117     |     3 |
+| mp4          | 450949193 |   455 |
+| pdf          | 718701387 |   178 |
+| png          | 330774221 |  4427 |
+| svg          | 7967      |     7 |
+| txt          | 333       |     1 |
+| unitypackage | 572539371 |   322 |
+| webmanifest  | 684       |     1 |
+| webp         | 3604014   |   242 |
+| woff2        | 66009     |     3 |
+| xml          | 933       |     2 |
 
